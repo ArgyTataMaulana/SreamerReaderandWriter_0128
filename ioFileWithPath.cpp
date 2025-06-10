@@ -13,4 +13,16 @@ int main() {
     // menunjuk ke sebuah nama file
     outfile.open(NamaFile + ".txt", ios::out);
     cout << ">- Menulis file, \'q\' untuk Keluar" << endl;
+    // unlimited loop untuk menulis
+    while (true)
+    {
+        /* code */
+        cout << "- ";
+        // mendapatkan sekian karakter dalam satu baris
+        getline(cin, baris);
+        // loop akan berhentijika user memasukkan karakter q
+        if (baris == "q") break;
+        // menulis dan memasukkan nilai dari 'baris' ke dalam file
+        outfile << baris << endl;
+    }
 }
