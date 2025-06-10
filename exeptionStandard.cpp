@@ -4,3 +4,7 @@
 #include <array>
 //untuk obyrk arrayyang akan kita gunakan
 using namespace std;
+
+int main() {
+    cout << "Awal Program" << endl; // penanda i....
+}
