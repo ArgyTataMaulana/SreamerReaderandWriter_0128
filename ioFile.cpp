@@ -15,6 +15,8 @@ int main() {
         cout << "- ";
         // mendapatkan setiap karakter dalam satu baris
         getline(cin, baris);
+        // loop akan berhenti jika memasukkan q
+        if(baris == "q")break;
         // menulis dan memasukkan nilai dari baris ke dalam file
         outfile << baris << endl;
     }
@@ -36,5 +38,7 @@ int main() {
             // dan tampilkan disini
             cout << baris << '\n';
         }
+        // tutup file tersebut setelah selesai
+        infile.close();
     }
 }
